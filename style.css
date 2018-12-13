@@ -557,33 +557,17 @@ tr:nth-child(even) {
 
 
 
-
-
-#skema_overskrift {
-    font-family: Arial;
-    position: absolute;
-
-    top: -2vw;
-    left: 36vw;
-}
-
 .skema_wrapper {
 
-    width: 100vw min-height: 100vw;
-    max-width: 375px;
+    width: 100vw;
+    min-height: 100vw;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
 
 }
 
-.skema_wrapper * {
-    padding: 0;
-    margin: 00;
-}
 
-.skema {
-    padding-top: 5vw;
-}
 
 .skema_uge {
 
@@ -591,8 +575,6 @@ tr:nth-child(even) {
 
 
 }
-
-#skema_overskrift {}
 
 .skema_dag {
     display: flex;
@@ -634,6 +616,16 @@ tr:nth-child(even) {
 
 }
 
+.skema_dag ul {
+    padding: 0;
+    margin: 0;
+}
+
+.skema_uge ul {
+    padding: 0;
+    margin: 0;
+}
+
 #uge_select {
 
     background-color: #EA5045;
@@ -643,39 +635,63 @@ tr:nth-child(even) {
     list-style-type: none;
 }
 
-.skema {
+#skema {
+    display: flex;
     width: 100vw;
     height: 140vw;
+    display: flex;
+    text-align: center;
+
 
 }
 
-
-
-#skemaet td,
-#skemaet tr {
+.tid {
+    flex-direction: column;
+    display: flex;
+    height: 75.8vw;
+    width: 15vw;
     border: 1px solid;
-    border-radius: 10px;
+    float: left;
+
 }
 
-#skemaet {
-    padding-left: 10vw
+.tid p {
+    margin: 0;
+    padding-bottom: 2.9vw
 }
 
-#skemaet td {
-    width: 60vw;
-    height: 20vw;
+.beskrivelse {
+    flex-direction: column;
+    display: flex;
+    float: left;
+    width: 50vw;
+    float: left;
+    height: 100vw;
 }
 
+.beskrivelse p {
+    margin: 0;
+}
 
+.tid .plz {}
 
+.beskrivelse .border {
+    border: 1px solid;
+}
+
+h1 {
+
+    position: absolute;
+    top: -3vw;
+    left: 35vw;
+    font-family: arial;
+}
 
 /*Calendar*/
 .calendar {
     display: flex;
     flex-grow: 1;
-
     width: 75vw;
-
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vw;
