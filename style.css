@@ -1,0 +1,775 @@
+/*---------------------------------------------------
+1: Variables & Common styling
+2: Layout / Grid
+3: Form styling
+4: Table styles
+5: Page specific styles
+---------------------------------------------------*/
+/*
+* {
+    padding: 0;
+    margin: 0;
+}
+*/
+.loginpage {
+    padding: 0;
+    margin: 0;
+}
+
+/*---------------------------------------------------
+1: Variables & Common styling
+---------------------------------------------------*/
+/*Variables*/
+:root {
+    --color-dark: #000000;
+    --color-light: #FEFEFE;
+    --color-dark-gray: #3F3140;
+    --color-keapink: #EA847C;
+}
+
+/*Common styling classes*/
+.rounded {
+    border-radius: 5px;
+}
+
+/*---------------------------------------------------
+2: Layout / Grid
+---------------------------------------------------*/
+.header {
+    position: static;
+    height: 15vw;
+    width: 100%;
+    background-color: #EA5045;
+    z-index: 2;
+
+
+
+}
+
+/*Menuuuuuuuuuuuuuuuuuuuuu*/
+#mySidebar {
+    display: flex;
+    width: 40vw;
+    position: absolute;
+    top: 0vw;
+    left: 60vw;
+    background-color: rgba(234, 80, 69, 0.97);
+    min-height: 100vw;
+    z-index: 100;
+    border-radius: 20px;
+
+}
+
+#mySidebar h2 {
+    text-align: center;
+}
+
+
+.a2 {
+    padding: 1vw;
+    float: right;
+}
+
+.a3:active {
+    background-color: white;
+}
+
+
+.a3 {
+    text-align: center;
+    margin: 5vw;
+    padding: 5vw;
+    width: 20vw;
+    height: 10vw;
+    background-color: rgba(0, 0, 0, 0.79);
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+}
+
+.a3 p {
+
+    color: white;
+}
+
+.burger {
+    border-radius: 20px;
+
+
+}
+
+/*Menuuuuuuuuuuuuuuuuuuuuu*/
+
+
+/*Grid container*/
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 15px;
+    justify-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+    opacity: 100;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    top: 40vw;
+}
+
+.afleveringerpage .container {
+    justify-items: left;
+}
+
+/*Grid column items*/
+#kea {
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+}
+
+label {
+    font-family: Arial;
+
+}
+
+.center {
+    position: relative;
+    left: 15vw;
+
+
+
+}
+
+/*loginpage*/
+.loginform {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.huskmig {
+    grid-row-start: 3;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.glemtpassword {
+    grid-row-start: 4;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+/*loginpage grid*/
+.formgroup {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    grid-gap: 15px;
+}
+
+.formgroup label {
+    grid-column-start: 1;
+}
+
+.formgroup input {
+    grid-column-start: 2;
+}
+
+.formgroup,
+.glemtpassword {
+    margin-bottom: 1.5em;
+}
+
+/*afleveringer page*/
+.afleveringer {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: end;
+}
+
+/*---------------------------------------------------
+3: Form styling
+
+---------------------------------------------------*/
+/*Inputs*/
+label,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=submit] {
+    padding: 1em;
+    border-radius: 25px;
+    border: none;
+}
+
+
+input[type=submit] {
+    background-color: #4C374B;
+
+
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    border: 1px solid var(--color-dark);
+    border-radius: 25px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    border: 3px solid #4C374B;
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+
+/*---------------------------------------------------
+4: Table styles
+-------------------------------------------------*/
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+
+th {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+td {
+    border: 1px dashed var (--color-accent);
+}
+
+
+
+
+/*--------------------------------------------------
+5: Page specific styles - husk underkategorier
+---------------------------------------------------*/
+/*Login page*/
+.loginpage {
+    min-height: 160vh;
+
+    background: linear-gradient(to top, #EA847C, #f8f8f8);
+}
+
+
+
+
+/******************Forside***********************/
+.forside {
+    background-color: #69596A;
+}
+
+#forside_overskrift {
+    position: absolute;
+    top: -2vw;
+    left: 38vw;
+}
+
+.forside h2 {
+    font-family: Arial;
+
+}
+
+
+
+.burger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#burger {
+    cursor: pointer;
+    position: absolute;
+    right: 5vw;
+    top: 3vw;
+}
+
+.logo {
+    width: 20%;
+    position: relative;
+    margin-left: 5vw;
+    margin-top: 5vw
+}
+
+.nyhedswrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#nyheder .nyheder_top {
+
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: white;
+    margin-bottom: 15px;
+    border-radius: 20px;
+
+
+
+
+}
+
+.dato {
+    text-align: right;
+    margin-right: 3vw
+}
+
+
+
+
+
+#nyheder .nyheder_bottom {
+
+    position: relative;
+
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+/*
+#nyheder .nyheder_bottom p {
+    position: absolute;
+    top: 60vw;
+    left: 60vw;
+
+
+
+
+
+}
+*/
+.nyheder_top li {
+    margin-right: 5px
+}
+
+#nyheder {
+    padding: 0;
+    margin: 3vw
+}
+
+#nyheder h2 {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 4px
+}
+
+
+/* CHAT */
+.chat_wrapper {
+    width: 100vw;
+    min-height: 100vw;
+    background-color: #69596A;
+    display: flex;
+
+
+
+}
+
+.bruger p {
+    padding: 0;
+    margin: 0;
+}
+
+.left_chat {
+    display: flex;
+    float: left;
+    width: 35vw;
+    height: 162vw;
+    flex-direction: column;
+    position: relative;
+    background-color: #4E4150;
+}
+
+.text_felt {
+    display: flex;
+    align-self: flex-end;
+    bottom: 0px;
+    width: 65vw;
+    height: 30vw;
+    background-color: aquamarine;
+}
+
+.bruger {
+    border-radius: 20px;
+    background-color: black;
+    width: 35vw;
+    height: 15vw;
+    cursor: cell;
+    margin: 0px 0px 7px 0px;
+}
+
+.bruger:active {
+    background-color: gainsboro;
+}
+
+.bruger p {
+    position: absolute;
+    left: 40%;
+    font-size: 45px;
+    font-family: arial;
+    color: white;
+}
+
+.text_box {
+    width: 75vw;
+    height: 30vw;
+}
+
+.send {
+    height: 30vw;
+    width: 35vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bruger h3 {
+    padding: vw;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.beskeder {
+    background-color: #69596A;
+}
+
+#besked_overskrift {
+    position: absolute;
+    top: -2vw;
+    left: 32vw;
+
+}
+
+/**********AFLEVERINGER************/
+#afleveringerpage {
+    background-color: ##FFB4AA;
+}
+
+#overskrift_af {
+    position: absolute;
+    position: absolute;
+    top: -2vw;
+    left: 30vw;
+}
+
+table {
+    width: 100%;
+    position: absolute;
+
+
+}
+
+td {
+    text-align: center;
+
+}
+
+
+
+table.Afleveringerne {
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    margin-top: 3vw;
+
+
+
+
+    border-color: #000000;
+
+
+}
+
+.container {
+    position: absolute;
+    top: 9vw
+}
+
+table.Afleveringerne td,
+table.Afleveringerne th {
+
+    font-family: arial;
+    padding: 8px;
+    border-collapse: collapse;
+
+
+
+}
+
+th {
+    border-radius: 20px;
+}
+
+table.Afleveringerne thead {
+    background-color: #faf8f7;
+    font-family: arial;
+
+
+
+}
+
+tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+.n1 {
+    font-family: arial;
+    font-weight: bold;
+
+}
+
+.n3 {
+    color: forestgreen;
+
+}
+
+.n2 {
+    font-style: italic;
+
+}
+
+.n4 {
+    color: red;
+
+}
+
+
+/***********SKEMA******************/
+
+
+
+
+
+
+
+#skema_overskrift {
+    font-family: Arial;
+    position: absolute;
+
+    top: -2vw;
+    left: 36vw;
+}
+
+.skema_wrapper {
+
+    width: 100vw min-height: 100vw;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skema_wrapper * {
+    padding: 0;
+    margin: 00;
+}
+
+.skema {
+    padding-top: 5vw;
+}
+
+.skema_uge {
+
+    width: 100vw;
+
+
+}
+
+#skema_overskrift {}
+
+.skema_dag {
+    display: flex;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    flex-direction: column;
+
+
+}
+
+.skema_dag p {
+    width: 19.45vw;
+    height: 7vw;
+    float: left;
+    border: 1px solid;
+    border-radius: 20px;
+
+
+}
+
+#dag_select {
+    background-color: #EA5045;
+}
+
+.skema_dag li {
+    list-style-type: none;
+
+}
+
+.skema_uge p {
+    border: 1px solid;
+    border-radius: 10px;
+    float: left;
+    width: 7.15vw;
+    height: 7vw;
+    text-align: center;
+
+
+}
+
+#uge_select {
+
+    background-color: #EA5045;
+}
+
+.skema_uge li {
+    list-style-type: none;
+}
+
+.skema {
+    width: 100vw;
+    height: 140vw;
+
+}
+
+
+
+#skemaet td,
+#skemaet tr {
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#skemaet {
+    padding-left: 10vw
+}
+
+#skemaet td {
+    width: 60vw;
+    height: 20vw;
+}
+
+
+
+
+/*Calendar*/
+.calendar {
+    display: flex;
+    flex-grow: 1;
+
+    width: 75vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+body {
+    font-family: arial;
+    margin: 0;
+
+}
+
+/* Month header */
+.month {
+    padding: 70px 25px;
+    background: #EA847C;
+    text-align: center;
+    border-radius: 20px;
+    margin: 3vw;
+
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 3vw;
+    padding: 10px 0;
+    background-color: #ddd;
+    border-radius: 15px;
+    height:
+
+
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 3vw;
+    border-radius: 20px;
+    height:
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #EA847C;
+    color: white !important
+}
+
+.nyhedswrap_calendar ul {
+    list-style-type: none;
+}
